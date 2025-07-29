@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { Target, Zap, ShieldCheck } from 'lucide-react';
-
 export default function About() {
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -14,12 +13,10 @@ export default function About() {
       },
     },
   };
-
   const itemVariants = {
     hidden: { opacity: 0, x: -30 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
   };
-
   const features = [
     {
       icon: <Target className="w-8 h-8 text-primary" />,
@@ -40,7 +37,6 @@ export default function About() {
         'Compromisso, integridade, segurança e paixão pelo que fazemos são os pilares que guiam cada passo da NTC Brasil.',
     },
   ];
-
   return (
     <section id="about" className="section-padding bg-white">
       <div className="container mx-auto">
@@ -52,8 +48,7 @@ export default function About() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
-            A base sólida para{' '}
-            <span className="gradient-text">seus grandes projetos</span>
+            Soluções em drenagem
           </h2>
           <p className="text-lg text-slate-600">
             A NTC Brasil é mais que uma construtora; somos parceiros na
@@ -62,7 +57,6 @@ export default function About() {
             em cada obra.
           </p>
         </motion.div>
-
         <motion.div
           initial="hidden"
           whileInView="visible"
